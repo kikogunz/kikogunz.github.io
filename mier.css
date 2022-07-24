@@ -1,0 +1,471 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    scroll-behavior: unset;
+}
+
+header{
+    width: 100%;
+    height: 60vh;
+    background-color: rgb(5, 8, 16);
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 140px;
+    margin-left: 20px;
+}
+
+.bar-btn{
+    font-size: 25px;
+    color: #fff;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-menu {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background: rgba(0,0,0, .95);
+    text-align: center;
+    transition: all .5s;
+
+}
+
+.nav-menu li{
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all .5s;
+}
+
+.nav-menu li a{
+    color: aliceblue;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+
+.nav-menu li a:active, .nav-menu li a:hover{
+    color: rgb(248,0, 0);
+    transition: .3s;
+}
+
+#check {
+    display: none;
+
+}
+
+#check:checked ~ .nav-menu{
+    height: 100vh;
+}
+
+#check:checked ~ .nav-menu li{
+    display: block;
+}
+
+.banner-text{
+    padding: 0 20px;
+    margin-top: 80px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.banner-text h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.banner-text h2{
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.button1{
+    font-size: 10px;
+    margin-right: 20px;
+    padding: 10px 10px;
+    background-color: rgb(248,0, 0);
+    color: #fff;
+    border-radius: 5px;
+}
+
+.button1:hover{
+    background-color: rgb(248,0, 0);
+    color: #fff;
+    transition: .5s;
+}
+
+.button2{
+    font-size: 10px;
+    margin-right: 20px;
+    padding: 10px 10px;
+    background-color: rgb(248,0, 0);
+    color: #fff;
+    border-radius: 5px;
+}
+
+.button2:hover{
+    background-color:  rgb(248,0, 0);
+    color: #fff;
+    transition: all .5s;
+}
+
+.best{
+    margin-left: 20px;
+}
+
+.best .letra h4 p{
+    padding-bottom: 10px;
+}
+
+section div > .imga img {
+    width: 30px;
+    
+}
+
+.hire{
+    background-color:rgb(248,0, 0);
+    padding: 10px;
+}
+
+/* Section H */
+
+section h2, h3{
+    text-align: center;
+    margin: 10px 0;
+    padding: 15px;
+}
+
+.mee, .imga > h3, h4{
+    text-align: left;
+    
+}
+
+section  h3{
+    color: rgb(248,0, 0);
+}
+
+/* Cajas */
+
+.bigcaja{
+    background-color: rgb(200, 200, 200);
+    padding: 10px;
+}
+
+.bigcaja h3{
+    color: rgb(248,0, 0);
+    margin-top: 35px;
+}
+
+.bigcaja h2{
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mmg > img {
+ width: 250px;
+ margin:10px 0px 0px 75px;
+
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 5px auto;
+    width: 400px;
+    height: max-content;
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    transition: all 400ms ease;
+}
+
+.card .mmg img{
+   margin: 0 40px;
+    
+}
+
+.contenido h4{
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.contenido p{
+    text-align: center;
+    
+    
+    
+}
+
+
+
+.image{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+
+}
+.enlac {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.enlac a{
+    margin-right: 20px;
+    background: rgb(248,0, 0);
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 5px 15px;
+    
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+    transition: all 400ms ease;
+    transform: translateY(-2%);
+} 
+
+form{
+    margin: 15px auto;
+    background: rgb(5, 8, 16);
+    width: 70%;
+    /* height: 300px; */
+    border: 1px solid black;
+
+}
+
+.enviador > h4{
+    align-items: center;
+}
+
+.enviador form > h3{   
+    color: #fff;
+}
+
+form label{
+    margin: 10px;
+    padding: 5px 5px;
+    display: block;
+    color: #fff;
+    
+}
+
+
+form input{
+    width: 95%;
+    margin: 10px;
+    display: block;
+    background: none;
+    border: none;
+    outline: 0px;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+
+
+
+form button {
+    padding: 8px 35px;
+    background: rgb(248,0, 0);
+    color: #fff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    
+
+
+
+footer{
+    background: rgb(5, 8, 16);
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer a:visited{
+    color: #fff;
+}
+
+footer div a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+
+}
+
+footer div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+@media (min-width: 480px){
+
+    .button1{
+        margin-right: 40px;
+        padding: 10px 30px;
+        background-color: rgb(248,0, 0);
+        color: #fff;
+        border-radius: 5px;
+    }
+    
+    .button1:hover{
+        background-color: rgb(248,0, 0);
+        color: #fff;
+        transition: .5s;
+    }
+    
+    .button2{
+        margin-right: 40px;
+        padding: 10px 30px;
+        background-color: rgb(248,0, 0);
+        color: #fff;
+        border-radius: 5px;
+    }
+
+    .button2:hover{
+        background-color: rgb(248,0, 0);
+        color: #fff;
+        transition: .5s;
+    }
+
+    .banner-text h1 {
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding-left: 70px;
+    }
+
+    .card{
+        margin: 0 10px;
+    }
+
+    .card {
+        border: 1px solid black;
+        border-radius: 10px;
+        margin: 5px auto;
+        width: 400px;
+        height: max-content;
+        background-color: #fff;
+    }
+
+}
+
+
+
+
+
+
+   
+
+   
+@media (min-width: 710px){
+    .logo{
+        margin-left: 50px;
+    }
+
+    nav{
+        height: 100px;
+    }
+
+    .bar-btn{
+        display: none;
+    }
+
+    .nav-menu{
+        position: relative;
+        height: 100px;
+        top:0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+    }
+
+    .nav-menu li{
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+
+    .nav-menu li a{
+        font-size: 12px;
+
+    }
+
+    .banner-text h1{
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+
+    .banner-text h2{
+        font-size: 20px;
+    }
+
+}
+
+@media (min-width: 950px){
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding-left: 70px;
+    }
+
+    .card{
+        margin: 0 10px;
+    }
+
+}
+
+
+@media (min-width: 1097px){
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit ,minmax(min-content,400px));
+        grid-template-rows: 300px 1fr;
+        gap: 10px;
+        box-sizing: border-box;
+        margin-left: 70px;
+        
+    }
+
+
+
+}
